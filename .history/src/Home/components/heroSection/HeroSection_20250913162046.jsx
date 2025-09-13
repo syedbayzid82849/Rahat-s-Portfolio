@@ -34,7 +34,7 @@ const Hero = () => {
             </Helmet>
             <section
                 id="home"
-                className="min-h-screen flex items-center relative overflow-hidden mt-14 md:mt-0 lg:mt-14 pb-20"
+                className="min-h-screen flex items-center relative overflow-hidden mt-14 md:mt-0 lg:mt-1"
             >
                 {/* Animated background elements */}
                 <div className="absolute inset-0 overflow-hidden">

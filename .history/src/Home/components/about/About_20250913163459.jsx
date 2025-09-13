@@ -4,24 +4,7 @@ import { Award, Users, Clock, Target, Palette, Lightbulb } from 'lucide-react';
 import { Helmet } from 'react-helmet';
 
 const About = () => {
-    const skills = [
-        { name: 'Adobe Photoshop', level: 95, icon: '🎨' },
-        { name: 'Adobe Illustrator', level: 90, icon: '✏️' },
-        { name: 'Adobe InDesign', level: 85, icon: '📄' },
-        { name: 'Brand Strategy', level: 92, icon: '🎯' },
-        { name: 'Digital Marketing', level: 88, icon: '📱' },
-        { name: 'UI/UX Design', level: 80, icon: '💻' },
-    ];
 
-
-    const tools = [
-        { name: 'Photoshop', color: 'bg-blue-500/20 text-blue-600 border-blue-500/30' },
-        { name: 'Illustrator', color: 'bg-orange-500/20 text-orange-600 border-orange-500/30' },
-        { name: 'InDesign', color: 'bg-pink-500/20 text-pink-600 border-pink-500/30' },
-        { name: 'Figma', color: 'bg-green-500/20 text-green-600 border-green-500/30' },
-        { name: 'Canva', color: 'bg-purple-500/20 text-purple-600 border-purple-500/30' },
-        { name: 'After Effects', color: 'bg-red-500/20 text-red-600 border-red-500/30' },
-    ];
 
     const services = [
         "LinkedIn Profile Optimization",
@@ -56,7 +39,7 @@ const About = () => {
                         className=" mb-16"
                     >
                         <h2 className="text-4xl text-center font-bold mb-6">
-                            About <span className="text-gradient bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 bg-clip-text text-transparent">Me</span>
+                            About <span className="text-gradient bg-gradient-to-r from- via-pink-500 to-red-500 bg-clip-text text-transparent">Me</span>
                         </h2>
                         {/* Intro Paragraph */}
                         <div className="space-y-4 text-lg leading-relaxed">

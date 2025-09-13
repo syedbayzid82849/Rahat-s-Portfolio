@@ -34,7 +34,7 @@ const Hero = () => {
             </Helmet>
             <section
                 id="home"
-                className="min-h-screen flex items-center relative overflow-hidden mt-14 md:mt-0 lg:mt-14 pb-20"
+                className="min-h-screen flex items-center relative overflow-hidden mt-14 md:mt-0 lg:mt-10"
             >
                 {/* Animated background elements */}
                 <div className="absolute inset-0 overflow-hidden">
@@ -79,7 +79,7 @@ const Hero = () => {
                                         Rahat
                                     </span>
                                     <br />
-                                    <span className="text-green-500">
+                                    <span className="text-green-00">
                                         Hussain
                                     </span>
                                     <br />

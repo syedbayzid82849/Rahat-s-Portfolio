@@ -107,7 +107,7 @@ const Skills = () => {
 
 
     return (
-        <section id="skills" className="pb-16">
+        <section id="skills" className="pb-7">
             {/* Helmet SEO Setup */}
             <Helmet>
                 <title>Skills & Expertise - Portfolio of Rahat Hussain</title>

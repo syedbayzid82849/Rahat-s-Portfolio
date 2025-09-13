@@ -21,8 +21,8 @@ const Navbar = () => {
         { href: "home", label: "Home" },
         { href: "about", label: "About" },
         { href: "skills", label: "Skills" },
-        { href: "portfolio", label: "Portfolio" },
         { href: "services", label: "Services" },
+        { href: "portfolio", label: "Portfolio" },
         { href: "contact", label: "Contact" },
     ];
 
@@ -59,7 +59,7 @@ const Navbar = () => {
                                 duration={500}
                                 spy={true}
                                 offset={-70} // navbar height adjust
-                                className="cursor-pointer text-gray-400 hover:text-green-500 transition-colors font-medium"
+                                className="cursor-pointer text-gray-700 hover:text-green-500 transition-colors font-medium"
                                 activeClass="text-green-600 font-semibold border-b-2 border-green-500 pb-1"
                             >
                                 {item.label}

@@ -102,7 +102,7 @@ const Portfolio = () => {
             : projects.filter((project) => project.category === activeFilter);
 
     return (
-        <section id="portfolio">
+        <section id="portfolio" ">
             <div className="container mx-auto px-6">
                 {/* Section Header */}
                 <motion.div
