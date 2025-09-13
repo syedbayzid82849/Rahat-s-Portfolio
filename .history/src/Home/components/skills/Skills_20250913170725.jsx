@@ -24,7 +24,7 @@ const Skills = () => {
     ];
 
     return (
-        <section id="skills" className="pb-20">
+        <section id="skills" className="pb-29">
             <Helmet>
                 <title>Skills & Expertise - Portfolio of Rahat Hussain</title>
                 <meta

@@ -24,7 +24,7 @@ const Skills = () => {
     ];
 
     return (
-        <section id="skills" className="pb-20">
+        <section id="skills" className="pb-16">
             <Helmet>
                 <title>Skills & Expertise - Portfolio of Rahat Hussain</title>
                 <meta
@@ -43,7 +43,7 @@ const Skills = () => {
                     className="text-center mb-10"
                 >
                     <h2 className="text-4xl font-bold mb-3">
-                        Skills & <span className="text-green-500">Expertise</span>
+                        <span className="text-green-500">Skills</span> Expertise
                     </h2>
                     <p className="text-xl text-gray-400 max-w-3xl mx-auto">
                         Here’s a showcase of the creative services and design expertise I provide for brands and businesses.

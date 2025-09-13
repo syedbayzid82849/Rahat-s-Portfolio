@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ExternalLink, Zap, Heart, Eye } from 'lucide-react';
-import { ArrowRight } from 'lucide-react';
 
 // ✅ Custom Light Green Button Component
 const Button = ({ children, className = "", ...props }) => {
@@ -160,22 +159,17 @@ const Portfolio = () => {
                 </motion.div>
 
                 {/* View More */}
-                <div className="text-center mt-6 flex justify-center">
+                <div className="text-center mt-16">
                     <motion.div
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
                     >
                         <Button
-                            href="https://www.behance.net/rgxfigure"
                             size="lg"
                             className="bg-green-500 hover:bg-green-600 text-white shadow-lg shadow-green-300/50 transition-all duration-300"
                         >
-                            <a
-                            className='flex items-center'
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                href="https://www.behance.net/rgxfigure">
-                                <span>View All Projects</span>
-                                <ArrowRight size={16} className="ml-2" />
-                            </a>
+                            <span>View A</span>
+                            <ArrowRight size={16} className="ml-2" />
                         </Button>
                     </motion.div>
                 </div>

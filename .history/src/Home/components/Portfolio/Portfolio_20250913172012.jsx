@@ -169,7 +169,7 @@ const Portfolio = () => {
                             className="bg-green-500 hover:bg-green-600 text-white shadow-lg shadow-green-300/50 transition-all duration-300"
                         >
                             <a
-                            className='flex items-center'
+                            className=''
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 href="https://www.behance.net/rgxfigure">

@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ExternalLink, Zap, Heart, Eye } from 'lucide-react';
-import { ArrowRight } from 'lucide-react';
 
 // ✅ Custom Light Green Button Component
 const Button = ({ children, className = "", ...props }) => {
@@ -61,6 +60,39 @@ const Portfolio = () => {
             likes: 234,
             views: 3210,
             featured: true
+        },
+        {
+            id: 4,
+            title: "Restaurant Menu Design",
+            category: "print",
+            description: "Premium menu design for upscale restaurant featuring elegant typography and food photography.",
+            image: "/api/placeholder/400/300",
+            tags: ["Menu Design", "Print", "Typography"],
+            likes: 67,
+            views: 980,
+            featured: false
+        },
+        {
+            id: 5,
+            title: "SaaS Landing Page",
+            category: "web",
+            description: "High-converting landing page design for B2B SaaS platform with 45% conversion rate.",
+            image: "/api/placeholder/400/300",
+            tags: ["Web Design", "UI/UX", "Conversion"],
+            likes: 198,
+            views: 4560,
+            featured: true
+        },
+        {
+            id: 6,
+            title: "Coffee Brand Identity",
+            category: "branding",
+            description: "Artisanal coffee brand identity with eco-friendly packaging and sustainable messaging.",
+            image: "/api/placeholder/400/300",
+            tags: ["Branding", "Packaging", "Sustainability"],
+            likes: 145,
+            views: 2100,
+            featured: false
         }
     ];
 
@@ -71,7 +103,7 @@ const Portfolio = () => {
 
     return (
         <section id="portfolio">
-            <div className="container mx-auto pb-20 px-3 lg:px-6">
+            <div className="container mx-auto px-6">
                 {/* Section Header */}
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
@@ -87,6 +119,8 @@ const Portfolio = () => {
                         Showcasing top projects in branding, digital design, and marketing with impactful results.
                     </p>
                 </motion.div>
+
+                {/* Filter Buttons */}
 
                 {/* Projects Grid */}
                 <motion.div layout className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -128,6 +162,18 @@ const Portfolio = () => {
                                                 </Button>
                                             </motion.div>
                                         </div>
+
+                                        {/* Stats */}
+                                        <div className="absolute bottom-4 right-4 flex items-center space-x-4 text-green-200 text-sm">
+                                            <div className="flex items-center space-x-1">
+                                                <Heart className="w-4 h-4" />
+                                                <span>{project.likes}</span>
+                                            </div>
+                                            <div className="flex items-center space-x-1">
+                                                <Eye className="w-4 h-4" />
+                                                <span>{project.views}</span>
+                                            </div>
+                                        </div>
                                     </div>
 
                                     {/* Project Info */}
@@ -160,22 +206,10 @@ const Portfolio = () => {
                 </motion.div>
 
                 {/* View More */}
-                <div className="text-center mt-6 flex justify-center">
-                    <motion.div
-                    >
-                        <Button
-                            href="https://www.behance.net/rgxfigure"
-                            size="lg"
-                            className="bg-green-500 hover:bg-green-600 text-white shadow-lg shadow-green-300/50 transition-all duration-300"
-                        >
-                            <a
-                            className='flex items-center'
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                href="https://www.behance.net/rgxfigure">
-                                <span>View All Projects</span>
-                                <ArrowRight size={16} className="ml-2" />
-                            </a>
+                <div className="text-center mt-16">
+                    <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                        <Button className="px-8 py-4 text-lg">
+                            View Complete Portfolio
                         </Button>
                     </motion.div>
                 </div>

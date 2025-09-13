@@ -160,22 +160,15 @@ const Portfolio = () => {
                 </motion.div>
 
                 {/* View More */}
-                <div className="text-center mt-6 flex justify-center">
+                <div className="text-center mt-3 flex jue">
                     <motion.div
                     >
                         <Button
-                            href="https://www.behance.net/rgxfigure"
                             size="lg"
                             className="bg-green-500 hover:bg-green-600 text-white shadow-lg shadow-green-300/50 transition-all duration-300"
                         >
-                            <a
-                            className='flex items-center'
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                href="https://www.behance.net/rgxfigure">
-                                <span>View All Projects</span>
-                                <ArrowRight size={16} className="ml-2" />
-                            </a>
+                            <span>View All Projects</span>
+                            <ArrowRight size={16} className="ml-2" />
                         </Button>
                     </motion.div>
                 </div>
