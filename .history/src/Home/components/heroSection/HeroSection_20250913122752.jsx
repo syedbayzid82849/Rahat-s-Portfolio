@@ -4,20 +4,6 @@ import { Button } from '../../../components/ui/button'; // adjust path
 import { Helmet } from 'react-helmet';
 
 const Hero = () => {
-    const [scrolled, setScrolled] = useState(false);
-    console.log(scrolled);
-
-    useEffect(() => {
-        const handleScroll = () => {
-            setScrolled(window.scrollY > 50);
-        };
-        window.addEventListener("scroll", handleScroll);
-        return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
-    // Scroll to top function
-    const scrollToTop = () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    };
     return (
         <>
             <Helmet>
@@ -59,8 +45,8 @@ const Hero = () => {
                                     <span className="text-lime-500">Rahat</span><br />
                                     <span className="text-purple-600">Hussain</span><br />
                                 </h1>
-                                <span className="text-lime-600 text-3xl font-semibold">Creative Design Solutions</span>
-                                <p className="text-xl max-w-lg leading-relaxed">
+                                <span className="text-lime-600 text-4xl font-semibold">Creative Design Solutions</span>
+                                <p className="text-xl text-gray-700 max-w-lg leading-relaxed">
                                     Helping founders and executives with creative designs, LinkedIn optimization,
                                     and premium branding solutions that drive results.
                                 </p>
@@ -75,11 +61,11 @@ const Hero = () => {
                             >
                                 <div className="text-center">
                                     <div className="text-3xl font-bold text-lime-500">500+</div>
-                                    <div className="text-sm text-gray-400">Projects</div>
+                                    <div className="text-sm text-gray-700">Projects</div>
                                 </div>
                                 <div className="text-center">
                                     <div className="text-3xl font-bold text-lime-600">50+</div>
-                                    <div className="text-sm text-gray-400">Happy Clients</div>
+                                    <div className="text-sm text-shadow-gray-600">Happy Clients</div>
                                 </div>
                             </motion.div>
 
@@ -188,32 +174,10 @@ const Hero = () => {
                         />
                     </motion.div>
                 </motion.div>
-                {/* back to home button */}
-                {
-                    scrolled &&
-                    <motion.div
-                        whileHover={{ scale: 1.1 }}
-                        whileTap={{ scale: 0.9 }}
-                        className="fixed bottom-8 right-8 z-50"
-                    >
-                        <Button
-                            onClick={scrollToTop}
-                            size="icon"
-                            variant="outline"
-                            className="rounded-full glass border-lime-500 bg-card/50 hover:bg-lime-100 hover:shadow-glow transition-all duration-300"
-                        >
-                            <ArrowUp size={16} />
-                        </Button>
-                    </motion.div>
-
-                }
-            </section >
+            </section>
         </>
     );
 };
 
 export default Hero;
 import React from 'react';
-import { useEffect } from 'react'; import { useState } from 'react';
-import { ArrowUp } from 'lucide-react';
-

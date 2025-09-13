@@ -188,10 +188,9 @@ const Hero = () => {
                         />
                     </motion.div>
                 </motion.div>
-                {/* back to home button */}
                 {
                     scrolled &&
-                    <motion.div
+                    < motion.div
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}
                         className="fixed bottom-8 right-8 z-50"
@@ -215,5 +214,4 @@ const Hero = () => {
 export default Hero;
 import React from 'react';
 import { useEffect } from 'react'; import { useState } from 'react';
-import { ArrowUp } from 'lucide-react';
 

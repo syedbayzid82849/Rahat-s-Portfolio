@@ -5,7 +5,6 @@ import { Helmet } from 'react-helmet';
 
 const Hero = () => {
     const [scrolled, setScrolled] = useState(false);
-    console.log(scrolled);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -14,10 +13,7 @@ const Hero = () => {
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
-    // Scroll to top function
-    const scrollToTop = () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    };
+
     return (
         <>
             <Helmet>
@@ -188,32 +184,11 @@ const Hero = () => {
                         />
                     </motion.div>
                 </motion.div>
-                {/* back to home button */}
-                {
-                    scrolled &&
-                    <motion.div
-                        whileHover={{ scale: 1.1 }}
-                        whileTap={{ scale: 0.9 }}
-                        className="fixed bottom-8 right-8 z-50"
-                    >
-                        <Button
-                            onClick={scrollToTop}
-                            size="icon"
-                            variant="outline"
-                            className="rounded-full glass border-lime-500 bg-card/50 hover:bg-lime-100 hover:shadow-glow transition-all duration-300"
-                        >
-                            <ArrowUp size={16} />
-                        </Button>
-                    </motion.div>
-
-                }
-            </section >
+            </section>
         </>
     );
 };
 
 export default Hero;
 import React from 'react';
-import { useEffect } from 'react'; import { useState } from 'react';
-import { ArrowUp } from 'lucide-react';
-
+import { useEffect } from 'react';

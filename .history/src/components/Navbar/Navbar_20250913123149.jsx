@@ -48,12 +48,9 @@ const Navbar = () => {
                         <div className="w-10 h-10 rounded-full flex items-center justify-center">
                             <img src={profile} alt="Profile" className="w-8 h-8 rounded-full" />
                         </div>
-                        {
-                            scrolled &&
-                            <span className="text-xl font-bold bg-gradient-to-r from-lime-500 to-purple-500 bg-clip-text text-transparent">
-                                Rahat Hussain
-                            </span>
-                        }
+{
+    scrolled $$
+}
                     </motion.div>
 
                     {/* Desktop Navigation */}

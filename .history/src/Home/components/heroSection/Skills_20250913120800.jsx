@@ -128,7 +128,7 @@ const Skills = () => {
                     className="text-center mb-10"
                 >
                     <h2 className="text-4xl font-bold mb-3">
-                        <span className="gradient-text">Skills</span> & Expertise
+                         <span className="gradient-text"></span>& Expertise
                     </h2>
                     <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
                         A comprehensive set of skills covering every aspect of design, from concept to completion.
