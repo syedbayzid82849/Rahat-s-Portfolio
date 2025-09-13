@@ -1,0 +1,12 @@
+import React from 'react'
+
+se    return (
+        <>
+            <section>
+                <h2 className="text-4xl text-center font-bold mb-6">
+                    My <span className="text-gradient bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 bg-clip-text text-transparent">Services</span>
+                </h2>
+            </section>
+        </>
+    )
+}

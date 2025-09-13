@@ -1,0 +1,54 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+.glass {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* gradient text */
+.gradient-text {
+    background: linear-gradient(to right, #7c3aed, #ec4899, #ef4444);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* glowing shadow on hover */
+.hover\:shadow-glow:hover {
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.6);
+}
+
+/* glassmorphism effect */
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* gradient text */
+.gradient-text {
+  background: linear-gradient(to right, #8b5cf6, #ec4899, #f43f5e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* glowing effect */
+.shadow-glow {
+  box-shadow: 0 0 25px rgba(139, 92, 246, 0.6);
+}
+
+/* gradient backgrounds */
+.bg-gradient-primary {
+  background: linear-gradient(135deg, #8b5cf6, #6366f1);
+}
+.bg-gradient-secondary {
+  background: linear-gradient(135deg, #ec4899, #f43f5e);
+}
+.bg-gradient-accent {
+  background: linear-gradient(135deg, #10b981, #34d399);
+}

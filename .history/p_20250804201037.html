@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahat Hussain - Graphic Designer | Visual Storyteller</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'float-delayed': 'float 6s ease-in-out infinite 2s',
+                        'float-delayed-2': 'float 6s ease-in-out infinite 4s',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px) rotate(0deg)' },
+                            '50%': { transform: 'translateY(-20px) rotate(180deg)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .text-gradient {
+            background: linear-gradient(135deg, #00ff9d, #00b4d8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background: linear-gradient(135deg, #00ff9d, #00b4d8);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white overflow-x-hidden font-poppins">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-gray-900/90 backdrop-blur-sm border-b border-gray-800">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold text-gradient">RH</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link hover:text-green-400">Home</a>
+                    <a href="#about" class="nav-link hover:text-green-400">About</a>
+                    <a href="#services" class="nav-link hover:text-green-400">Services</a>
+                    <a href="#portfolio" class="nav-link hover:text-green-400">Portfolio</a>
+                    <a href="#contact" class="nav-link hover:text-green-400">Contact</a>
+                </div>
+                <button class="md:hidden text-green-400" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+            <div id="mobileMenu" class="hidden md:hidden mt-4 space-y-4">
+                <a href="#home" class="block hover:text-green-400">Home</a>
+                <a href="#about" class="block hover:text-green-400">About</a>
+                <a href="#services" class="block hover:text-green-400">Services</a>
+                <a href="#portfolio" class="block hover:text-green-400">Portfolio</a>
+                <a href="#contact" class="block hover:text-green-400">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen bg-gradient-to-br from-slate-900 via-gray-900 to-blue-900 relative flex items-center">
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute top-1/4 left-1/12 w-32 h-32 bg-green-400 rounded-full opacity-10 animate-float"></div>
+            <div class="absolute top-3/5 right-1/12 w-24 h-24 bg-blue-400 rotate-45 opacity-10 animate-float-delayed"></div>
+            <div class="absolute bottom-1/4 left-1/5 w-40 h-40 bg-purple-400 rounded-full opacity-10 animate-float-delayed-2"></div>
+        </div>
+        
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="opacity-0 translate-y-8 transition-all duration-700 ease-out fade-in">
+                    <h1 class="text-5xl md:text-7xl font-bold mb-6">
+                        <span class="text-gradient">Rahat</span><br>
+                        <span class="text-white">Hussain</span>
+                    </h1>
+                    <p class="text-xl md:text-2xl text-gray-300 mb-4">
+                        Graphic Designer | Visual Storyteller | Branding Specialist
+                    </p>
+                    <p class="text-lg text-gray-400 mb-8 max-w-lg">
+                        Creative and disciplined designer transforming ideas into compelling visual solutions across digital and print platforms.
+                    </p>
+                    <button onclick="scrollToSection('portfolio')" class="bg-gradient-to-r from-green-400 to-blue-500 text-white px-8 py-4 rounded-full font-semibold hover:shadow-lg hover:shadow-green-400/25 transition-all duration-300 shadow-lg shadow-green-400/30">
+                        View My Work <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                </div>
+                
+                <div class="opacity-0 translate-y-8 transition-all duration-700 ease-out fade-in flex justify-center">
+                    <div class="relative">
+                        <div class="w-80 h-80 rounded-full bg-gradient-to-br from-green-400 to-blue-500 p-2">
+                            <div class="w-full h-full rounded-full bg-gray-800 flex items-center justify-center">
+                                <div class="w-72 h-72 rounded-full bg-gradient-to-br from-gray-700 to-gray-600 flex items-center justify-center">
+                                    <i class="fas fa-user text-8xl text-gray-400"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="absolute -top-4 -right-4 w-16 h-16 bg-green-400 rounded-full animate-pulse"></div>
+                        <div class="absolute -bottom-4 -left-4 w-12 h-12 bg-blue-400 rounded-full animate-pulse"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 opacity-0 translate-y-8 transition-all duration-700 ease-out fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                    About <span class="text-gradient">Me</span>
+                </h2>
+                <p class="text-xl text-gray-400 max-w-3xl mx-auto">
+                    Passionate about creating visual experiences that tell stories and drive results
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="opacity-0 translate-y-8 transition-all duration-700 ease-out fade-in">
+                    <h3 class="text-2xl font-semibold mb-6 text-green-400">My Journey</h3>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        Based in Sylhet, Bangladesh, I bring creativity and discipline to every design project. With proven expertise in branding, marketing content, and digital design, I specialize in managing end-to-end design projects and delivering impactful visual solutions.
+                    </p>
+                    <p class="text-gray-300 mb-8 leading-relaxed">
+                        I excel at collaborating with cross-functional teams and transforming complex ideas into compelling designs that align with brand goals across both digital and print platforms.
+                    </p>
+                    
+                    <div class="space-y-4">
+                        <h4 class="text-xl font-semibold text-green-400">Education</h4>
+                        <div class="space-y-3">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-graduation-cap text-green-400"></i>
+                                <span>Master in Design Course, Times IT, Sylhet (2021–2022)</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-certificate text-blue-400"></i>
+                                <span>HSC (2022), SSC (2020) — Sylhet, Bangladesh</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="opacity-0 translate-y-8 transition-all duration-700 ease-out fade-in">
+                    <h3 class="text-2xl font-semibold mb-6 text-green-400">Design Strengths</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span>Branding</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="h-2 bg-white/10 rounded-full overflow-hidden">
+                                <div class="h-full bg-gradient-to-r from-green-400 to-blue-500 rounded-full transition-all duration-1000 ease-out skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span>Typography</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="h-2 bg-white/10 rounded-full overflow-hidden">
+                                <div class="h-full bg-gradient-to-r from-green-400 to-blue-500 rounded-full transition-all duration-1000 ease-out skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span>Layout Design</span>
+                                <span>92%</span>
+                            </div>
+                            <div class="h-2 bg-white/10 rounded-full overflow-hidden">
+                                <div class="h-full bg-gradient-to-r from-green-400 to-blue-500 rounded-full transition-all duration-1000 ease-out skill-progress" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span>Visual Storytelling</span>
+                                <span>88%</span>
+                            </div>
+                            <div class="h-2 bg-white/10 rounded-full overflow-hidden">
+                                <div class="h-full bg-gradient-to-r from-green-400 to-blue-500 rounded-full transition-all duration-1000 ease-out skill-progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 opacity-0 translate-y-8 transition-all duration-700 ease-out fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                    My <span class="text-gradient">Services</span>
+                </h2>
+                <p class="text-xl text-gray-400 max-w-3xl mx-auto">
+                    Comprehensive design solutions tailored to your brand's unique needs
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="opacity-0 translate-y-8 transition-all duration-700 ease-out fade-in hover:-translate-y-2 hover:shadow-xl hover:shadow-green-400/20 bg-gray-800 p-8 rounded-2xl border border-gray-700 transition-all duration-300">
+                    <div class="w-16 h-16 bg-gradient-to-br from-green-400 to-blue-500 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-palette text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-green-400">Logo Design & Brand Identity</h3>
+                    <p class="text-gray-400">Creating memorable brand identities that capture your essence and resonate with your audience.</p>
+                </div>
+                
+                <div class="opacity-0 translate-y-8 transition-all duration-700 ease-out fade-in hover:-translate-y-2 hover:shadow-xl hover:shadow-green-400/20 bg-gray-800 p-8 rounded-2xl border border-gray-700 transition-all duration-300">
+                    <div class="w-16 h-16 bg-gradient-to-br from-purple-400 to-pink-500 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-bullhorn text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-green-400">Marketing Collateral</h3>
+                    <p class="text-gray-400">Designing impactful flyers, brochures, and posters that drive engagement and conversions.</p>
+                </div>
+                
+                <div class="opacity-0 translate-y-8 transition-all duration-700 ease-out fade-in hover:-translate-y-2 hover:shadow-xl hover:shadow-green-400/20 bg-gray-800 p-8 rounded-2xl border border-gray-700 transition-all duration-300">
+                    <div class="w-16 h-16 bg-gradient-to-br from-blue-400 to-cyan-500 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-share-alt text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-green-400">Social Media Graphics</h3>
+                    <p class="text-gray-400">Eye-catching social media designs that boost your online presence and engagement.</p>
+                </div>
+                
+                <div class="opacity-0 translate-y-8 transition-all duration-700 ease-out fade-in hover:-translate-y-2 hover:shadow-xl hover:shadow-green-400/20 bg-gray-800 p-8 rounded-2xl border border-gray-700 transition-all duration-300">
+                    <div class="w-16 h-16 bg-gradient-to-br from-orange-400 to-red-500 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-presentation text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-green-400">Presentation Design</h3>
+                    <p class="text-gray-400">Professional PowerPoint and document designs that communicate your message effectively.</p>
+                </div>
+                
+                <div class="opacity-0 translate-y-8 transition-all duration-700 ease-out fade-in hover:-translate-y-2 hover:shadow-xl hover:shadow-green-400/20 bg-gray-800 p-8 rounded-2xl border border-gray-700 transition-all duration-300">
+                    <div class="w-16 h-16 bg-gradient-to-br from-teal-400 to-green-500 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-print text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-green-400">Print & Digital Templates</h3>
+                    <p class="text-gray-400">Versatile templates that maintain brand consistency across all your communications.</p>
+                </div>
+                
+                <div class="opacity-0 translate-y-8 transition-all duration-700 ease-out fade-in hover:-translate-y-2 hover:shadow-xl hover:shadow-green-400/20 bg-gray-800 p-8 rounded-2xl border border-gray-700 transition-all duration-300">
+                    <div class="w-16 h-16 bg-gradient-to-br from-indigo-400 to-purple-500 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-chart-line text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-green-400">Visual Content Strategy</h3>
+                    <p class="text-gray-400">Strategic visual planning that aligns with your business goals and target audience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 opacity-0 translate-y-8 transition-all duration-700 ease-out fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                    My <span class="text-gradient">Portfolio</span>
+                </h2>
+                <p class="text-xl text-gray-400 max-w-3xl mx-auto">
+                    A showcase of my recent projects and creative solutions
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="opacity-0 translate-y-8 transition-all duration-700 ease-out fade-in hover:-translate-y-2 hover:shadow-xl hover:shadow-green-400/20 bg-gray-900 rounded-2xl overflow-hidden border border-gray-700 transition-all duration-300">
+                    <div class="h-64 bg-gradient-to-br from-green-400 to-blue-500 flex items-center justify-center">
+                        <i class="fas fa-image text-6xl text-white opacity-50"></i>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-semibold mb-2 text-green-400">Women's Haven@ - USA</h3>
+                        <p class="text-gray-400 mb-4">Lead Designer | 2023</p>
+                        <p class="text-gray-300 mb-6">Comprehensive branding project including social media graphics, brochures, and PowerPoint presentations. Collaborated on strategic branding initiatives.</p>
+                        <button onclick="showProjectDetails('womens-haven')" class="bg-gradient-to-r from-green-400 to-blue-500 text-white px-6 py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300">
+                            View More <i class="fas fa-arrow-right ml-2"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="opacity-0 translate-y-8 transition-all duration-700 ease-out fade-in hover:-translate-y-2 hover:shadow-xl hover:shadow-green-400/20 bg-gray-900 rounded-2xl overflow-hidden border border-gray-700 transition-all duration-300">
+                    <div class="h-64 bg-gradient-to-br from-purple-400 to-pink-500 flex items-center justify-center">
+                        <i class="fas fa-graduation-cap text-6xl text-white opacity-50"></i>
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-semibold mb-2 text-green-400">Kamrul Academy - BD</h3>
+                        <p class="text-gray-400 mb-4">Creative Director | 2022-2023</p>
+                        <p class="text-gray-300 mb-6">Led comprehensive branding and design initiatives. Managed junior designers and created cross-platform visual assets for educational institution.</p>
+                        <button onclick="showProjectDetails('kamrul-academy')" class="bg-gradient-to-r from-purple-400 to-pink-500 text-white px-6 py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300">
+                            View More <i class="fas fa-arrow-right ml-2"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 opacity-0 translate-y-8 transition-all duration-700 ease-out fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                    Let's <span class="text-gradient">Connect</span>
+                </h2>
+                <p class="text-xl text-gray-400 max-w-3xl mx-auto">
+                    Ready to bring your vision to life? Let's discuss your next project
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="opacity-0 translate-y-8 transition-all duration-700 ease-out fade-in">
+                    <h3 class="text-2xl font-semibold mb-8 text-green-400">Get In Touch</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-gradient-to-br from-green-400 to-blue-500 rounded-full flex items-center justify-center">
+                                <i class="fas fa-map-marker-alt text-white"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold">Location</p>
+                                <p class="text-gray-400">Dhakadakshin, Sylhet, Bangladesh</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-gradient-to-br from-purple-400 to-pink-500 rounded-full flex items-center justify-center">
+                                <i class="fas fa-envelope text-white"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold">Email</p>
+                                <p class="text-gray-400">rahatfigure10@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-gradient-to-br from-blue-400 to-cyan-500 rounded-full flex items-center justify-center">
+                                <i class="fas fa-phone text-white"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold">Phone</p>
+                                <p class="text-gray-400">Available upon request</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h4 class="text-xl font-semibold mb-4 text-green-400">Follow Me</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gradient-to-br hover:from-green-400 hover:to-blue-500 transition-all duration-300">
+                                <i class="fab fa-behance text-xl"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gradient-to-br hover:from-green-400 hover:to-blue-500 transition-all duration-300">
+                                <i class="fab fa-linkedin text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="opacity-0 translate-y-8 transition-all duration-700 ease-out fade-in">
+                    <form class="space-y-6" onsubmit="handleFormSubmit(event)">
+                        <div>
+                            <label class="block text-sm font-semibold mb-2 text-green-400">Name</label>
+                            <input type="text" required class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:border-green-400 focus:outline-none transition-colors duration-300">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-semibold mb-2 text-green-400">Email</label>
+                            <input type="email" required class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:border-green-400 focus:outline-none transition-colors duration-300">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-semibold mb-2 text-green-400">Message</label>
+                            <textarea rows="5" required class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:border-green-400 focus:outline-none transition-colors duration-300 resize-none"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-gradient-to-r from-green-400 to-blue-500 text-white py-4 rounded-lg font-semibold hover:shadow-lg hover:shadow-green-400/25 transition-all duration-300 shadow-lg shadow-green-400/30">
+                            Send Message <i class="fas fa-paper-plane ml-2"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 border-t border-gray-700 py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-gray-400">
+                © 2024 Rahat Hussain. All rights reserved. | Crafted with passion in Sylhet, Bangladesh
+            </p>
+        </div>
+    </footer>
+
+    <!-- Project Details Modal -->
+    <div id="projectModal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 hidden">
+        <div class="bg-gray-800 rounded-2xl p-8 max-w-2xl mx-4 max-h-[90vh] overflow-y-auto">
+            <div class="flex justify-between items-center mb-6">
+                <h3 id="modalTitle" class="text-2xl font-bold text-green-400"></h3>
+                <button onclick="closeModal()" class="text-gray-400 hover:text-white text-2xl">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div id="modalContent" class="text-gray-300"></div>
+        </div>
+    </div>
+
+    <script>
+        // Smooth scrolling
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.remove('opacity-0', 'translate-y-8');
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all fade-in elements
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Animate skill bars when they come into view
+        const skillObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const progressBars = entry.target.querySelectorAll('.skill-progress');
+                    progressBars.forEach(bar => {
+                        const width = bar.style.width;
+                        bar.style.width = '0%';
+                        setTimeout(() => {
+                            bar.style.width = width;
+                        }, 500);
+                    });
+                }
+            });
+        }, observerOptions);
+
+        // Observe skills section
+        const skillsSection = document.querySelector('#about');
+        if (skillsSection) {
+            skillObserver.observe(skillsSection);
+        }
+
+        // Project details modal
+        function showProjectDetails(project) {
+            const modal = document.getElementById('projectModal');
+            const title = document.getElementById('modalTitle');
+            const content = document.getElementById('modalContent');
+            
+            if (project === 'womens-haven') {
+                title.textContent = "Women's Haven@ - USA";
+                content.innerHTML = `
+                    <div class="space-y-4">
+                        <p><strong>Role:</strong> Lead Designer</p>
+                        <p><strong>Duration:</strong> 2023</p>
+                        <p><strong>Project Overview:</strong></p>
+                        <p>Comprehensive branding project for Women's Haven@, a US-based organization. This project involved creating a cohesive visual identity across multiple platforms and materials.</p>
+                        <p><strong>Key Deliverables:</strong></p>
+                        <ul class="list-disc list-inside space-y-2 ml-4">
+                            <li>Social media graphics and templates</li>
+                            <li>Marketing brochures and flyers</li>
+                            <li>Professional PowerPoint presentations</li>
+                            <li>Brand strategy consultation</li>
+                        </ul>
+                        <p><strong>Impact:</strong> Successfully established a strong visual presence that enhanced the organization's outreach and engagement efforts.</p>
+                    </div>
+                `;
+            } else if (project === 'kamrul-academy') {
+                title.textContent = "Kamrul Academy - Bangladesh";
+                content.innerHTML = `
+                    <div class="space-y-4">
+                        <p><strong>Role:</strong> Creative Director</p>
+                        <p><strong>Duration:</strong> 2022-2023</p>
+                        <p><strong>Project Overview:</strong></p>
+                        <p>Led comprehensive branding and design initiatives for Kamrul Academy, an educational institution in Bangladesh. Managed a team of junior designers while creating cross-platform visual assets.</p>
+                        <p><strong>Key Responsibilities:</strong></p>
+                        <ul class="list-disc list-inside space-y-2 ml-4">
+                            <li>Brand identity development and guidelines</li>
+                            <li>Educational material design</li>
+                            <li>Digital marketing assets</li>
+                            <li>Team management and mentoring</li>
+                            <li>Cross-platform consistency maintenance</li>
+                        </ul>
+                        <p><strong>Achievement:</strong> Successfully modernized the academy's visual identity, resulting in increased enrollment and improved brand recognition in the local education sector.</p>
+                    </div>
+                `;
+            }
+            
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('projectModal');
+            modal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Form submission
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            
+            // Create custom modal for form submission
+            const modalHtml = `
+                <div class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50" id="successModal">
+                    <div class="bg-gray-800 rounded-2xl p-8 max-w-md mx-4 text-center">
+                        <div class="w-16 h-16 bg-gradient-to-br from-green-400 to-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-check text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-green-400 mb-4">Message Sent!</h3>
+                        <p class="text-gray-300 mb-6">Thank you for reaching out! I'll get back to you within 24 hours.</p>
+                        <button onclick="closeSuccessModal()" class="bg-gradient-to-r from-green-400 to-blue-500 text-white px-6 py-3 rounded-full font-semibold">
+                            Close
+                        </button>
+                    </div>
+                </div>
+            `;
+            
+            document.body.insertAdjacentHTML('beforeend', modalHtml);
+            document.body.style.overflow = 'hidden';
+            
+            // Reset form
+            event.target.reset();
+        }
+
+        function closeSuccessModal() {
+            const modal = document.getElementById('successModal');
+            if (modal) {
+                modal.remove();
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+                
+                // Close mobile menu if open
+                const mobileMenu = document.getElementById('mobileMenu');
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Close modal when clicking outside
+        document.getElementById('projectModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'969e140f04987c45',t:'MTc1NDMxMDc1Ni4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
