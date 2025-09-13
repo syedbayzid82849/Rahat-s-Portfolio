@@ -7,8 +7,8 @@ const Footer = () => {
 
     return (
         <div className="bg-secondary/10 border-t border-secondary/20">
-            <div className="container mx-auto px-6 py-3">
-                <div className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0">
+            <div className="container mx-auto px-6 py-6">
+                <div className="flex flex-col md:flex-row items-center justify-c space-y-4 md:space-y-0">
                     <motion.div
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
