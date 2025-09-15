@@ -1,0 +1,58 @@
+import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { motion } from "framer-motion";
+import { ArrowRight } from "lucide-react";
+
+const ServicesCard = ({ service }) => {
+    const settings = {
+        dots: true,
+        infinite: true,
+        autoplay: true,
+        speed: 800,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+    };
+
+    return (
+        <motion.div
+            className="bg-gray-800 w-3xl shadow-lg rounded-2xl p-3 group hover:shadow-xl hover:shadow-green-600 transition duration-300"
+            whileHover={{ scale: 1.03 }}
+        >
+            {/* Image Carousel */}
+            <Slider {...settings}>
+                {service.images.map((img, index) => (
+                    <div key={index}>
+                        <img
+                            src={img}
+                            alt={service.title}
+                            className="w-full h-48 object-cover rounded-xl"
+                        />
+                    </div>
+                ))}
+            </Slider>
+
+            {/* Service Info */}
+            <h3 className="text-xl font-semibold mt-4">{service.title}</h3>
+            <p className="text-green-600 font-bold">{service.price}</p>
+            <p className="text-sm mt-2 line-clamp-2 overflow-hidden">{service.description}</p>
+            <p className="text-sm mt-2">
+                <strong>Delivery:</strong> {service.delivery}
+            </p>
+
+            {/* Details Button */}
+            <div className="flex justify-end">
+                <a href={service.link} target="_blank" rel="noopener noreferrer">
+                    <button className="flex items-center gap-2 px-4 py-2 bg-green-500 hover:bg-green-600 text-white rounded-md font-medium transition">
+                        Details <ArrowRight size={16} />
+                    </button>
+                </a>
+
+            </div>
+        </motion.div>
+    );
+};
+
+export default ServicesCard;
