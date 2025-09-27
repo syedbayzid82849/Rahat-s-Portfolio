@@ -1,4 +1,4 @@
-# Rahat Hussain - AI Portfolio Website
+# Rahat Hussain - Portfolio Website
 
 [Live Site](https://rahat-hussain.netlify.app/)
 
