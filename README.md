@@ -53,7 +53,7 @@ The site is built using **React**, **Framer Motion**, **Tailwind CSS**, and inte
 
 ## Installation
 
-1. Clone the repository:
+1. Clone the repository for contribute:
 
 ```bash
-git clone https://github.com/yourusername/rahat-portfolio.git
+[git clone https://github.com/yourusername/rahat-portfolio.git](https://github.com/syedbayzid82849/Rahat-s-Portfolio.git)
