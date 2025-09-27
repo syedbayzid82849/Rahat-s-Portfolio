@@ -48,7 +48,6 @@ The site is built using **React**, **Framer Motion**, **Tailwind CSS**, and inte
 [![React Helmet](https://img.shields.io/badge/React%20Helmet-6.1.0-red)](https://www.npmjs.com/package/react-helmet)  
 [![React Helmet Async](https://img.shields.io/badge/React%20Helmet%20Async-2.0.5-orange)](https://www.npmjs.com/package/react-helmet-async)  
 [![ESLint](https://img.shields.io/badge/ESLint-9.30.1-blue)](https://eslint.org/)
-** - Deployment and hosting
 
 ---
 
