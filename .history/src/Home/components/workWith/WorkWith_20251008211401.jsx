@@ -1,0 +1,48 @@
+import Marquee from "react-fast-marquee";
+import { motion } from "framer-motion";
+
+
+const WorkedWith = () => {
+    return (
+        <section className="py-20 bg-gradient-to-br from-green-700 to-green-400">
+            <div className="container mx-auto">
+                <motion.div
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6 }}
+                    viewport={{ once: false }}
+                    className="mb-16"
+                >
+                    <h2 className="text-4xl text-center font-bold mb-6">
+                        Worked With
+                    </h2>
+                </motion.div>
+                <h2 className="text-2xl md:text-3xl font-bold text-center mb-6">
+
+                </h2>
+                <Marquee gradient={false} speed={60}>
+                    <div className="flex gap-10 items-center">
+                        <img src="/assets/comp1.png" alt="Google" className="h-24" />
+                        <img src="/assets/comp2.png" alt="Apple" className="h-24" />
+                        <img src="/assets/comp1.png" alt="Microsoft" className="h-24" />
+                        <img src="/assets/comp1.png" alt="Amazon" className="h-24" />
+                        <img src="/assets/comp1.png" alt="Facebook" className="h-24" />
+                        <img src="/assets/comp1.png" alt="Netflix" className="h-24" />
+                        <img src="/assets/comp1.png" alt="Tesla" className="h-24" />
+                        <img src="/assets/comp1.png" alt="Nike" className="h-24" />
+                        <img src="/assets/comp1.png" alt="Nike" className="h-24" />
+                        <img src="/assets/comp1.png" alt="Nike" className="h-24" />
+                        <img src="/assets/comp1.png" alt="Nike" className="h-24" />
+                        <img src="/assets/comp1.png" alt="Nike" className="h-24" />
+                        <img src="/assets/comp1.png" alt="Nike" className="h-24" />
+                        <img src="/assets/comp1.png" alt="Nike" className="h-24" />
+                        <img src="/assets/comp1.png" alt="Nike" className="h-24" />
+                        <img src="/assets/comp1.png" alt="Nike" className="h-24" />
+                    </div>
+                </Marquee>
+            </div>
+        </section>
+    );
+};
+
+export default WorkedWith;

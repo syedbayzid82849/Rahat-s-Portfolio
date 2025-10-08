@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Menu, X, Download, Mail } from "lucide-react";
 import { Link } from "react-scroll"; // ✅ react-scroll import
-import profile from '../../../public/assets/profile.jpg';
+import profile from '@/assets/profile.jpg';
 import toast from "react-hot-toast";
 
 const Navbar = () => {

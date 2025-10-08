@@ -1,11 +1,11 @@
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 import {
     Palette, Monitor, Megaphone, Building, Image,
     FileText, Share2, Brush, Type, Camera,
     Layout, Layers, Target, Globe, Mail,
     CreditCard, Zap, Heart, Award
-} from 'lucide-react';
-import { Helmet } from 'react-helmet';
+} from "lucide-react";
+import { Helmet } from "react-helmet";
 
 const Skills = () => {
     const skillCategories = [
@@ -17,8 +17,8 @@ const Skills = () => {
                 { name: "Adobe Illustrator", icon: <Brush className="w-4 h-4" /> },
                 { name: "Adobe InDesign", icon: <Layout className="w-4 h-4" /> },
                 { name: "Figma", icon: <Monitor className="w-4 h-4" /> },
-                { name: "Canva", icon: <Layers className="w-4 h-4" /> }
-            ]
+                { name: "Canva", icon: <Layers className="w-4 h-4" /> },
+            ],
         },
         {
             title: "Brand & Marketing",
@@ -28,8 +28,8 @@ const Skills = () => {
                 { name: "Brand Design", icon: <Heart className="w-4 h-4" /> },
                 { name: "Marketing Materials", icon: <Megaphone className="w-4 h-4" /> },
                 { name: "Branding", icon: <Target className="w-4 h-4" /> },
-                { name: "Visual Design", icon: <Palette className="w-4 h-4" /> }
-            ]
+                { name: "Visual Design", icon: <Palette className="w-4 h-4" /> },
+            ],
         },
         {
             title: "Print Design",
@@ -39,8 +39,8 @@ const Skills = () => {
                 { name: "Brochure Design", icon: <FileText className="w-4 h-4" /> },
                 { name: "Flyer Design", icon: <FileText className="w-4 h-4" /> },
                 { name: "Poster Design", icon: <Image className="w-4 h-4" /> },
-                { name: "Print Design", icon: <FileText className="w-4 h-4" /> }
-            ]
+                { name: "Print Design", icon: <FileText className="w-4 h-4" /> },
+            ],
         },
         {
             title: "Digital Marketing",
@@ -50,8 +50,8 @@ const Skills = () => {
                 { name: "Banner Ads", icon: <Monitor className="w-4 h-4" /> },
                 { name: "Facebook Cover", icon: <Share2 className="w-4 h-4" /> },
                 { name: "Social Media Post Design", icon: <Share2 className="w-4 h-4" /> },
-                { name: "Youtube Thumbnail Design", icon: <Camera className="w-4 h-4" /> }
-            ]
+                { name: "Youtube Thumbnail Design", icon: <Camera className="w-4 h-4" /> },
+            ],
         },
         {
             title: "Design Fundamentals",
@@ -61,8 +61,8 @@ const Skills = () => {
                 { name: "Color Theory", icon: <Palette className="w-4 h-4" /> },
                 { name: "Layout Design", icon: <Layout className="w-4 h-4" /> },
                 { name: "Design Principles", icon: <Layers className="w-4 h-4" /> },
-                { name: "Creative Design", icon: <Brush className="w-4 h-4" /> }
-            ]
+                { name: "Creative Design", icon: <Brush className="w-4 h-4" /> },
+            ],
         },
         {
             title: "Industry Knowledge",
@@ -72,122 +72,32 @@ const Skills = () => {
                 { name: "Google Workspace", icon: <Globe className="w-4 h-4" /> },
                 { name: "Email Signature Design", icon: <Mail className="w-4 h-4" /> },
                 { name: "Freelancing", icon: <Zap className="w-4 h-4" /> },
-                { name: "Art & Illustration", icon: <Brush className="w-4 h-4" /> }
-            ]
-        }
+                { name: "Art & Illustration", icon: <Brush className="w-4 h-4" /> },
+            ],
+        },
     ];
+
     const tools = [
-        {
-            name: "Photoshop",
-            image: '/public/assets/photoshop.svg',
-        },
-        {
-            name: "Illustrator",
-            image: '/public/assets/illustrator.svg',
-        },
-        {
-            name: "InDesign",
-            image: '/public/assets/indesign.svg',
-        },
-        {
-            name: "Figma",
-            image: '/public/assets/figma.svg',
-        },
-        {
-            name: "Canva",
-            image: '/public/assets/canva.svg',
-        },
-        {
-            name: "After Effects",
-            image: '/public/assets/after-effects.svg',
-        },
+        { name: "Photoshop", image: "/assets/photoshop.svg" },
+        { name: "Illustrator", image: "/assets/illustrator.svg" },
+        { name: "InDesign", image: "/assets/indesign.svg" },
+        { name: "Figma", image: "/assets/figma.svg" },
+        { name: "Canva", image: "/assets/canva.svg" },
+        { name: "After Effects", image: "/assets/after-effects.svg" },
     ];
-
-
 
     return (
         <section id="skills" className="py-20 bg-background">
-            {/* Helmet SEO Setup */}
             <Helmet>
                 <title>Skills & Expertise - Portfolio of Rahat Hussain</title>
                 <meta
                     name="description"
                     content="Explore my expertise in design software, branding, digital marketing, print design, and industry knowledge. I master tools like Photoshop, Illustrator, InDesign, and Figma."
                 />
-                <meta name="keywords" content="Design Skills, Photoshop, Illustrator, Branding, Marketing, Graphic Design, Portfolio" />
-                    <rect width="128" height="128" rx="16" fill="#330000" />
-                    <text x="28" y="80" fontSize="48" fontWeight="bold" fill="#FF9A00">
-                        Ai
-                    </text>
-                </svg>
-            ),
-        },
-        {
-            name: "InDesign",
-            svg: (
-                <svg width="24" height="24" viewBox="0 0 128 128">
-                    <rect width="128" height="128" rx="16" fill="#49021F" />
-                    <text x="20" y="80" fontSize="44" fontWeight="bold" fill="#FF3366">
-                        Id
-                    </text>
-                </svg>
-            ),
-        },
-        {
-            name: "Figma",
-            svg: (
-                <svg width="24" height="24" viewBox="0 0 128 128">
-                    <circle cx="64" cy="24" r="20" fill="#F24E1E" />
-                    <circle cx="64" cy="64" r="20" fill="#A259FF" />
-                    <circle cx="64" cy="104" r="20" fill="#1ABCFE" />
-                    <circle cx="24" cy="44" r="20" fill="#FF7262" />
-                    <circle cx="104" cy="44" r="20" fill="#0ACF83" />
-                </svg>
-            ),
-        },
-        {
-            name: "Canva",
-            svg: (
-                <svg width="24" height="24" viewBox="0 0 128 128">
-                    <circle cx="64" cy="64" r="56" fill="#00C4CC" />
-                    <text
-                        x="64"
-                        y="78"
-                        fontSize="40"
-                        fontWeight="bold"
-                        textAnchor="middle"
-                        fill="white"
-                    >
-                        C
-                    </text>
-                </svg>
-            ),
-        },
-        {
-            name: "After Effects",
-            svg: (
-                <svg width="24" height="24" viewBox="0 0 128 128">
-                    <rect width="128" height="128" rx="16" fill="#1A0033" />
-                    <text x="16" y="80" fontSize="40" fontWeight="bold" fill="#9999FF">
-                        Ae
-                    </text>
-                </svg>
-            ),
-        },
-    ];
-
-
-
-    return (
-        <section id="skills" className="py-20 bg-background">
-            {/* Helmet SEO Setup */}
-            <Helmet>
-                <title>Skills & Expertise - Portfolio of Rahat Hussain</title>
                 <meta
-                    name="description"
-                    content="Explore my expertise in design software, branding, digital marketing, print design, and industry knowledge. I master tools like Photoshop, Illustrator, InDesign, and Figma."
+                    name="keywords"
+                    content="Design Skills, Photoshop, Illustrator, Branding, Marketing, Graphic Design, Portfolio"
                 />
-                <meta name="keywords" content="Design Skills, Photoshop, Illustrator, Branding, Marketing, Graphic Design, Portfolio" />
             </Helmet>
 
             <div className="container mx-auto px-6">
@@ -209,16 +119,15 @@ const Skills = () => {
 
                 {/* Skills Grid */}
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {skillCategories.map((category, categoryIndex) => (
+                    {skillCategories.map((category, index) => (
                         <motion.div
                             key={category.title}
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.6, delay: categoryIndex * 0.1 }}
+                            transition={{ duration: 0.6, delay: index * 0.1 }}
                             viewport={{ once: true }}
                             className="glass rounded-2xl p-6 hover:shadow-glow transition-all duration-300"
                         >
-                            {/* Category Header */}
                             <div className="flex items-center space-x-3 mb-6">
                                 <div className="w-10 h-10 bg-gradient-primary rounded-full flex items-center justify-center text-primary-foreground">
                                     {category.icon}
@@ -226,14 +135,13 @@ const Skills = () => {
                                 <h3 className="text-xl font-bold">{category.title}</h3>
                             </div>
 
-                            {/* Skills List */}
                             <div className="space-y-3">
-                                {category.skills.map((skill, skillIndex) => (
+                                {category.skills.map((skill, sIndex) => (
                                     <motion.div
                                         key={skill.name}
                                         initial={{ opacity: 0, x: -20 }}
                                         whileInView={{ opacity: 1, x: 0 }}
-                                        transition={{ duration: 0.4, delay: (categoryIndex * 0.1) + (skillIndex * 0.05) }}
+                                        transition={{ duration: 0.4, delay: (index * 0.1) + (sIndex * 0.05) }}
                                         viewport={{ once: true }}
                                         className="flex items-center space-x-3 p-3 rounded-lg hover:bg-muted/50 transition-colors group"
                                     >
@@ -248,7 +156,7 @@ const Skills = () => {
                     ))}
                 </div>
 
-                {/* Tools Mastery Section */}
+                {/* Tools Section */}
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -258,17 +166,17 @@ const Skills = () => {
                 >
                     <h3 className="text-2xl font-bold mb-8">Tools I Master</h3>
                     <div className="flex flex-wrap justify-center gap-4">
-                        {tools.map((tool, index) => (
+                        {tools.map((tool, i) => (
                             <motion.div
                                 key={tool.name}
                                 initial={{ opacity: 0, scale: 0.8 }}
                                 whileInView={{ opacity: 1, scale: 1 }}
                                 whileHover={{ scale: 1.05 }}
-                                transition={{ duration: 0.3, delay: index * 0.1 }}
+                                transition={{ duration: 0.3, delay: i * 0.1 }}
                                 viewport={{ once: true }}
                                 className="glass px-6 py-3 flex items-center space-x-2 rounded-full font-medium text-foreground border border-primary/20 hover:bg-primary/10 transition-colors"
                             >
-                                {tool.icon}
+                                <img src={tool.image} alt={tool.name} className="w-6 h-6" />
                                 <span>{tool.name}</span>
                             </motion.div>
                         ))}
