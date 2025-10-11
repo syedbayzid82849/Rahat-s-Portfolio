@@ -14,7 +14,6 @@ const Skills = () => {
         { name: "LinkedIn Branding", icon: <Monitor className="w-5 h-5" /> },
 
         // 🟢 Branding Related (Top Priority)
-        { name: "Branding Design", icon: <Award className="w-5 h-5" /> },
         { name: "Logo design", icon: <Award className="w-5 h-5" /> },
         { name: "Brand identity", icon: <Heart className="w-5 h-5" /> },
         { name: "Business card and Stationery design", icon: <Layers className="w-5 h-5" /> },
@@ -37,12 +36,12 @@ const Skills = () => {
 
     // Skills progress data
     const skills = [
-        { name: "Adobe Illustrator", percent: "100%", color: "from-green-300 to-green-500" },
-        { name: "Adobe Photoshop", percent: "100%", color: "from-green-400 to-green-600" },
+        { name: "Adobe Illustrator", percent: "95%", color: "from-green-300 to-green-500" },
+        { name: "Branding Design", percent: "96%", color: "from-green-400 to-green-600" },
+        { name: "Social Media Design", percent: "85%", color: "from-green-500 to-green-700" },
+        { name: "Adobe Photoshop", percent: "93%", color: "from-green-400 to-green-600" },
         { name: "Adobe InDesign", percent: "90%", color: "from-green-500 to-green-700" },
-        { name: "Microsoft Word", percent: "100%", color: "from-green-400 to-green-600" },
-        { name: "Microsoft PowerPoint", percent: "100%", color: "from-green-500 to-green-700" },
-        { name: "Microsoft Excel", percent: "100%", color: "from-green-400 to-green-600" },
+        { name: "Print & Digital Design", percent: "88%", color: "from-green-400 to-green-600" },
     ];
 
     return (

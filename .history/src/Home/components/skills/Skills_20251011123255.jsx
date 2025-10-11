@@ -42,7 +42,7 @@ const Skills = () => {
         { name: "Adobe InDesign", percent: "90%", color: "from-green-500 to-green-700" },
         { name: "Microsoft Word", percent: "100%", color: "from-green-400 to-green-600" },
         { name: "Microsoft PowerPoint", percent: "100%", color: "from-green-500 to-green-700" },
-        { name: "Microsoft Excel", percent: "100%", color: "from-green-400 to-green-600" },
+        { name: "Microsoft Excel", percent: "1%", color: "from-green-400 to-green-600" },
     ];
 
     return (

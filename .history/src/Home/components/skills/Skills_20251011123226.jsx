@@ -37,12 +37,12 @@ const Skills = () => {
 
     // Skills progress data
     const skills = [
-        { name: "Adobe Illustrator", percent: "100%", color: "from-green-300 to-green-500" },
-        { name: "Adobe Photoshop", percent: "100%", color: "from-green-400 to-green-600" },
+        { name: "Adobe Illustrator", percent: "95%", color: "from-green-300 to-green-500" },
+        { name: "Adobe Photoshop", percent: "93%", color: "from-green-400 to-green-600" },
         { name: "Adobe InDesign", percent: "90%", color: "from-green-500 to-green-700" },
-        { name: "Microsoft Word", percent: "100%", color: "from-green-400 to-green-600" },
-        { name: "Microsoft PowerPoint", percent: "100%", color: "from-green-500 to-green-700" },
-        { name: "Microsoft Excel", percent: "100%", color: "from-green-400 to-green-600" },
+        { name: "Microsoft Word", percent: "96%", color: "from-green-400 to-green-600" },
+        { name: "Microsoft PowerPoint", percent: "85%", color: "from-green-500 to-green-700" },
+        { name: "Microsoft Excel", percent: "88%", color: "from-green-400 to-green-600" },
     ];
 
     return (
