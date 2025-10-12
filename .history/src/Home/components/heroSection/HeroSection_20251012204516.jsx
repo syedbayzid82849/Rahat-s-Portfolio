@@ -12,7 +12,7 @@ const Hero = () => {
 
     // Define the stats data
     const statsData = [
-        { label: 'Projects', endValue: 1000, duration: 2, suffix: '+' },
+        { label: 'Projects', endValue: 10000, duration: 2, suffix: '+' },
         { label: 'Happy Clients', endValue: 200, duration: 2, suffix: '+' },
         { label: 'Years Experience', endValue: 5, duration: 2, suffix: '+' }, // New 'Experience' stat
     ];

@@ -15,16 +15,17 @@ const Navbar = () => {
     }, []);
 
 
-    const handleResumeBtn = () => {
-        const link = document.createElement('a');
-        link.href = '/Resume of Rahat.pdf';          
-        link.download = 'Resume of Rahat.pdf'; 
-        document.body.appendChild(link);
-        link.click();
-        link.remove();
+const handleResumeBtn = () => {
+  // সরাসরি লিংক ক্রিয়েট করে ক্লিক ট্রিগার
+  const link = document.createElement('a');
+  link.href = '/resume.pdf';           // public/resume.pdf
+  link.download = 'Syed_Bayzid_Resume.pdf'; // ইউজারকে যেই নামে ডাউনলোড করতে চাও
+  document.body.appendChild(link);
+  link.click();
+  link.remove();
 
-        toast.success('Resume download started ✅');
-    };
+  toast.success('Resume download started ✅');
+};
     const navItems = [
         { href: "home", label: "Home" },
         { href: "about", label: "About" },

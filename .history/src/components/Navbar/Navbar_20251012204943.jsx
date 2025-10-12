@@ -17,8 +17,8 @@ const Navbar = () => {
 
     const handleResumeBtn = () => {
         const link = document.createElement('a');
-        link.href = '/Resume of Rahat.pdf';          
-        link.download = 'Resume of Rahat.pdf'; 
+        link.href = '/resume.pdf';          
+        link.download = 'Syed_Bayzid_Resume.pdf'; // ইউজারকে যেই নামে ডাউনলোড করতে চাও
         document.body.appendChild(link);
         link.click();
         link.remove();

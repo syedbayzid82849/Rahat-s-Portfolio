@@ -16,9 +16,10 @@ const Navbar = () => {
 
 
     const handleResumeBtn = () => {
+        // সরাসরি লিংক ক্রিয়েট করে ক্লিক ট্রিগার
         const link = document.createElement('a');
-        link.href = '/Resume of Rahat.pdf';          
-        link.download = 'Resume of Rahat.pdf'; 
+        link.href = '/resume.pdf';           // public/resume.pdf
+        link.download = 'Syed_Bayzid_Resume.pdf'; // ইউজারকে যেই নামে ডাউনলোড করতে চাও
         document.body.appendChild(link);
         link.click();
         link.remove();
